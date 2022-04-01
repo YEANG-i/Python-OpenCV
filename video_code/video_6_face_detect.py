@@ -1,5 +1,6 @@
-import cv2 as cv
 import time
+
+import cv2 as cv
 
 video = 'video/hand_2.mp4'
 video_deal_out = 'video/video_deal_out.avi'
@@ -8,7 +9,7 @@ pTime = 0
 cTime = 0
 
 # 1.读取视频
-cap = cv.VideoCapture(video)
+cap = cv.VideoCapture(0)
 retval_width = cap.get(3)  # 获取视频的宽高
 retval_height = cap.get(4)  # 获取视频的宽高
 retval_fps = cap.get(5)  # 获取视频的FPS
