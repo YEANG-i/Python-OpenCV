@@ -2,10 +2,11 @@ import cv2 as cv
 
 # video = 'video/video_out.avi'
 video = 'video/video_deal_out.avi'
+video_1 = 'video/dance_man.flv'
 
 
 def main():
-    cap = cv.VideoCapture(video)  # 读取视频
+    cap = cv.VideoCapture(video_1)  # 读取视频
     retval_width = cap.get(3)  # 获取视频的宽高
     retval_height = cap.get(4)  # 获取视频的宽高
     retval_fps = cap.get(5)  # 获取视频的FPS
